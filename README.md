@@ -52,10 +52,12 @@ ddos-detection/
 
 ```bash
 pip install scapy flask pandas
+```
 
 ```bash
 python -m venv ddos-env
 source ddos-env/bin/activate  # On Windows: ddos-env\Scripts\activate
+```
 
 ---
 
@@ -88,6 +90,7 @@ source ddos-env/bin/activate  # On Windows: ddos-env\Scripts\activate
 ### 1 . Start Detection Engine
 ```bash
 python main.py
+```
 Starts packet sniffing, detection, and mitigation.
 
 ## 2. Launch Web Dashboard
@@ -95,6 +98,7 @@ Starts packet sniffing, detection, and mitigation.
 ```bash
 cd web_dashboard
 python app.py
+```
 
 Then open your browser at:  
 📍 http://localhost:5000
@@ -127,7 +131,7 @@ Location: `logs/ddos_logs.txt`
 ```bash
 2025-06-05 15:23:01 - SYN Flood detected from 192.168.0.5
 2025-06-05 15:24:05 - UDP Flood detected from 192.168.0.8
-
+```
 
 ---
 
@@ -140,7 +144,7 @@ setInterval(() => {
     fetchLogs();       // Update log table
     fetchAttackData(); // Update bar chart
 }, 5000);              // Every 5 seconds
-
+```
 
 ## 🧪 Test and Simulate
 
@@ -148,6 +152,7 @@ Simulate DDoS traffic only in a safe, isolated environment:
 
 ```bash
 hping3 -S <target_ip> -p 80 --flood
+```
 ⚠️ Use only on controlled networks or virtual labs.
 
 ---
@@ -161,15 +166,9 @@ hping3 -S <target_ip> -p 80 --flood
 
 ---
 
-## 🧠 Author & Contributions
-
-**Sai Keerthan Reddy P**  
-📧 saikeerthansk1@gmail.com  
-🔗 [github.com/saikeerthan](https://github.com/saikeerthan)
-
----
-
 ## ⚠️ Disclaimer
 
 This project is for educational and research purposes only.  
 Never deploy or test on public or production networks without proper authorization.
+
+---
