@@ -157,15 +157,6 @@ hping3 -S <target_ip> -p 80 --flood
 
 ---
 
-## ✅ To Do / Future Enhancements
-
-- Email alerts for critical attacks
-- Better UI/UX styling
-- Docker containerization
-  - Authentication for dashboard access
-
----
-
 ## ⚠️ Disclaimer
 
 This project is for educational and research purposes only.  
